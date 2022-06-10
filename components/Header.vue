@@ -26,7 +26,7 @@
  margin-bottom: 50px;
 }
 .logo{
-  width: 70px;
+  width: 50px;
 }
 </style>
 
