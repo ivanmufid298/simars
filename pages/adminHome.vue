@@ -12,7 +12,7 @@
                 <div class="card-img">
                   <img src="~assets/img/pana.png" class="img-fluid" alt="">
                   <p class="card-text mt-3">Hari ini, DD-MM-YYYY</p>
-                  <a href="#" class="btn btn-primary btn-block mb-4">+ PENDAFTARAN</a>
+                  <a href="daftarPasien" class="btn btn-primary btn-block mb-4">+ PENDAFTARAN</a>
                 </div>
             </div>
           </div>

@@ -1,6 +1,14 @@
 <template>
-  <div>
+  <div class="page">
     <Header />
+    <div class="container mb-4">
+      <div class="row">
+        <div>
+          <a class="link" href="adminHome">Home</a> <strong>></strong>
+          <a class="link" href="" style="font-weight: bold"><strong>Pendaftaran</strong></a>
+        </div>
+      </div>
+    </div>
     <div class="container-fluid page">
       <div class="row">
         <div class="card">
@@ -53,13 +61,26 @@
                           <option>dr.Trisna Sp.KG (GIGI)</option>
                         </select>
 
-                        <label for="dokter" class="label mt-4">Dokter</label>
-                        <input type="text" class="form-control mb-2" id="name" placeholder="Alterra">
-                        <span class="input-group-append">
-                          <span class="input-group-text bg-white">
-                            <i class="fa fa-calendar"></i>
-                          </span>
-                        </span>
+                        <label for="dater" class="label mt-4">Jadwal</label>
+                        <input type="date" class="form-control mb-2" id="date">
+
+                        <label for="time" class="label mt-4">Jam</label>
+                        <select id="time" class="form-control">
+                          <option selected>----</option>
+                          <option>-- 08:00-11:00 --</option>
+                          <option>-- 09:00-11:00 --</option>
+                          <option>-- 10:00-11:00 --</option>
+                          <option>-- 13:00-17:00 --</option>
+                          <option>-- 14:00-17:00 --</option>
+                          <option>-- 15:00-17:00 --</option>
+                          <option>-- 16:00-17:00 --</option>
+                        </select>
+
+                        <label for="keluhan" class="label mt-4">Keluhan</label>
+                        <textarea class="form-control" id="keluhan" rows="4"></textarea> <br>
+                        <small class="text">*Pastikan data sudah terisi dengan benar</small>
+
+                        <button class="btn btn-primary btn-block mt-4">KONFIRMASI</button>
                     </div>
                   </div>
                 </form>
@@ -73,11 +94,22 @@
 
 <style>
 .page{
-  max-width: 1500px;
+    background-color: whitesmoke;
+    height: 100vh;
+}
+.container a {
+  text-decoration: none;
+  color: grey;
+}
+.container a:hover{
+  color: black;
 }
 .card{
   margin: auto;
   width: 1500px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 1px 3px 3px rgba(124, 124, 124, 0.5);
 }
 .card-body{
   padding: 50px;
@@ -102,5 +134,13 @@
   padding-left: 33px;
   font-weight: 500;
   font-size: 1em;
+}
+.btn{
+  width: 90%;
+  margin: auto;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px;
 }
 </style>
