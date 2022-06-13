@@ -100,4 +100,8 @@
   padding: 17px;
   box-shadow: 1px 3px 3px rgba(124, 124, 124, 0.7);
 }
+.btn:hover {
+  background-color: white;
+  color: #0957DE;
+}
 </style>

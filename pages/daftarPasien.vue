@@ -137,10 +137,15 @@
 }
 .btn{
   width: 90%;
+  background-color: #0957DE;
   margin: auto;
   color: white;
   font-size: 1.5em;
   font-weight: bold;
   padding: 10px;
+}
+.btn:hover {
+  background-color: white;
+  color: #0957DE;
 }
 </style>
