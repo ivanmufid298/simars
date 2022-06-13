@@ -41,14 +41,14 @@ export default {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: url("~/assets/img/bg.png");
+    background-image: url("~/assets/img/bg2.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position:center;
-    background-color: #0957DE;
+    background-color: white;
 }
 .title{
-  color: white;
+  color: #0957DE;
   font-weight: bold;
   font-size: 5vw;
 }
@@ -58,6 +58,9 @@ export default {
   border-radius: 10px;
   padding: 20px;
   margin-top: 100px;
+  background-color: whitesmoke;
+  border: none;
+  box-shadow: 1px 3px 3px rgba(124, 124, 124, 0.5);
 }
 .form-title{
   color: #0957DE;
