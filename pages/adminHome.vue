@@ -12,7 +12,8 @@
                 <div class="card-img">
                   <img src="~assets/img/pana.png" class="img-fluid" alt="">
                   <p class="card-text mt-3">Hari ini, DD-MM-YYYY</p>
-                  <a href="daftarPasien" class="btn btn-primary btn-block mb-4">+ PENDAFTARAN</a>
+                  <a href="daftarPasien" class="btn btn-primary btn-block mb-3">+ Pendaftaran pasien baru</a>
+                  <a href="daftarPasien" class="btn btn1 btn-primary btn-block mb-4">+ Pendaftaran pasien lama</a>
                 </div>
             </div>
           </div>
@@ -103,5 +104,21 @@
 .btn:hover {
   background-color: white;
   color: #0957DE;
+}
+.btn1{
+  background-color: rgb(0, 202, 202);
+  border-color: rgb(0, 202, 202);
+  margin: auto;
+  width: 70%;
+  height: auto;
+  font-size: 1.2vw;
+  font-weight: bold;
+  padding: 17px;
+  box-shadow: 1px 3px 3px rgba(124, 124, 124, 0.7);
+}
+.btn1:hover {
+  background-color: white;
+  border-color: rgb(0, 202, 202);
+  color: rgb(0, 202, 202);
 }
 </style>
