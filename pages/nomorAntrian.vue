@@ -20,7 +20,43 @@
             </div>
             <div class="mt-3">
               <div class="container">
-                <div class="row gap">
+                <div class="row">
+                  <div class="content col-6">
+                    <h4>Dokter</h4>
+                    <h3>
+                      <strong>dr.Liza Amalia Putri</strong>
+                    </h3>
+                  </div>
+                  <div class="content col-6">
+                    <h4>Dokter</h4>
+                    <h3>
+                      <strong>dr.Liza Amalia Putri</strong>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3">
+              <div class="container">
+                <div class="row">
+                  <div class="content col-6">
+                    <h4>Dokter</h4>
+                    <h3>
+                      <strong>dr.Liza Amalia Putri</strong>
+                    </h3>
+                  </div>
+                  <div class="content col-6">
+                    <h4>Dokter</h4>
+                    <h3>
+                      <strong>dr.Liza Amalia Putri</strong>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3">
+              <div class="container">
+                <div class="row">
                   <div class="content col-6">
                     <h4>Dokter</h4>
                     <h3>
@@ -52,8 +88,8 @@
 }
 .container-fluid{
   margin: auto;
-  margin-top: 150px;
-  width: 800px;
+  margin-top: 100px;
+  width: 800px  ;
 }
 .card{
   border: none;
@@ -79,10 +115,5 @@
   border-color: black;
   border-width: thin;
   border-radius: 5px;
-  width: 100px;
-}
-.gap{
-  column-count: 2;
-  column-gap: 40px;
 }
 </style>
