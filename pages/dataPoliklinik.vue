@@ -5,7 +5,7 @@
       <div class="row">
         <div>
           <a class="link" href="adminHome">Home</a> <strong>></strong>
-          <a class="link" href="" style="font-weight: bold"><strong>Data Dokter</strong></a>
+          <a class="link" href="" style="font-weight: bold"><strong>Data Poliklinik</strong></a>
         </div>
       </div>
     </div>
@@ -13,14 +13,7 @@
       <div class="row">
         <div class="card">
           <div class="card-body">
-            <div class="row">
-              <div class="col-6">
-                <h5 class="card-title pl-4">Data Dokter</h5>
-              </div>
-              <div class="col-6">
-                <a href="" class="btn btn1 btn-block">TAMBAH DATA DOKTER</a>
-              </div>
-            </div>
+            <h5 class="card-title pl-4">Data Poliklinik</h5>
             <div class="container-fluid text-center mb-5">
               <div class="row">
                 <div class="col-6">
@@ -32,13 +25,15 @@
                             POLI UMUM
                           </strong>
                         </h5>
-                        <h5 class="text mb-5">
+                        <h5 class="text">
                           Dr.Keshya Valerie SKy
                         </h5>
                       </div>
                       <div class="col-6 mt-3">
-                        <a href="" class="btn btn-block">LIHAT DATA</a>
-                        <small class="small">Jadwal: Senin - Minggu</small>
+                        <a href="" class="btn btn-block">LIHAT LIST ANTRIAN</a>
+                        <div class="progress mb-4">
+                          <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="20">10/20 Kuota terisi</div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -50,13 +45,15 @@
                             POLI JANTUNG
                           </strong>
                         </h5>
-                        <h5 class="text mb-5">
+                        <h5 class="text">
                           Dr.Rizky Sp. A(k)
                         </h5>
                       </div>
                       <div class="col-6 mt-3">
-                        <a href="" class="btn btn-block">LIHAT DATA</a>
-                        <small class="small">Jadwal: Senin - Minggu</small>
+                        <a href="" class="btn btn-block">LIHAT LIST ANTRIAN</a>
+                        <div class="progress mb-4">
+                          <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="20">10/20 Kuota terisi</div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -68,13 +65,15 @@
                             POLI THT
                           </strong>
                         </h5>
-                        <h5 class="text mb-5">
+                        <h5 class="text">
                           Dr.Amroni Sp. THT
                         </h5>
                       </div>
                       <div class="col-6 mt-3">
-                        <a href="" class="btn btn-block">LIHAT DATA</a>
-                        <small class="small">Jadwal: Senin - Minggu</small>
+                        <a href="" class="btn btn-block">LIHAT LIST ANTRIAN</a>
+                        <div class="progress mb-4">
+                          <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="20">10/20 Kuota terisi</div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -88,13 +87,15 @@
                             POLI MATA
                           </strong>
                         </h5>
-                        <h5 class="text mb-5">
+                        <h5 class="text">
                           Dr.Baki Sp. M
                         </h5>
                       </div>
                       <div class="col-6 mt-3">
-                        <a href="" class="btn btn-block">LIHAT DATA</a>
-                        <small class="small">Jadwal: Senin - Minggu</small>
+                        <a href="" class="btn btn-block">LIHAT LIST ANTRIAN</a>
+                        <div class="progress mb-4">
+                          <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="20">10/20 Kuota terisi</div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -106,13 +107,15 @@
                             POLI ANAK
                           </strong>
                         </h5>
-                        <h5 class="text mb-5">
+                        <h5 class="text">
                           Dr.Valen Sp. A
                         </h5>
                       </div>
                       <div class="col-6 mt-3">
-                        <a href="" class="btn btn-block">LIHAT DATA</a>
-                        <small class="small">Jadwal: Senin - Minggu</small>
+                        <a href="" class="btn btn-block">LIHAT LIST ANTRIAN</a>
+                        <div class="progress mb-4">
+                          <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="20">10/20 Kuota terisi</div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -124,13 +127,15 @@
                             POLI GIGI
                           </strong>
                         </h5>
-                        <h5 class="text mb-5">
+                        <h5 class="text">
                           Dr.Trisna Sp. KG
                         </h5>
                       </div>
                       <div class="col-6 mt-3">
-                        <a href="" class="btn btn-block">LIHAT DATA</a>
-                        <small class="small">Jadwal: Senin - Minggu</small>
+                        <a href="" class="btn btn-block">LIHAT LIST ANTRIAN</a>
+                        <div class="progress mb-4">
+                          <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="20">10/20 Kuota terisi</div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -146,11 +151,8 @@
 
 <style>
 .page{
-  background-color: whitesmoke;
-  height: 100vh;
-}
-.small{
-  color: #0957DE;
+    background-color: whitesmoke;
+    height: 100vh;
 }
 .progress{
   width: 278px;
@@ -210,15 +212,5 @@
   background-color: white;
   color: #0957DE;
   border-color: #0957DE;
-}
-.btn1{
-  width: 40%;
-  background-color: rgb(165, 165, 165);
-  float: right;
-}
-.btn1:hover{
-  background-color: white;
-  border-color: rgb(165, 165, 165);
-  color: rgb(165, 165, 165);
 }
 </style>

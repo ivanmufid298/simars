@@ -33,7 +33,7 @@
                 <div class="col-6">
                   <div class="card-body mt-5">
                     <div class="card-title">DATA POLIKLINIK</div>
-                    <a href="#" class="btn btn-primary btn-block mb-4">LIHAT DATA</a>
+                    <a href="dataPoliklinik" class="btn btn-primary btn-block mb-4">LIHAT DATA</a>
                   </div>
                 </div>
               </div>
