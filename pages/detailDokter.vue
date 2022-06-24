@@ -23,30 +23,49 @@
                 <div class="col-6">
                   <div class="card content text-center">
                     <img src="~/assets/img/Ava.png" alt="" class="card-img-top">
-                    <div class="card-body">
-                      <div class="card-title">
-                        <h4>Dr. Keshya Valerie Sky</h4>
+                    <div class="card-body" style="padding-bottom: 20px">
+                      <div class="card-text">
+                        <h4>
+                          <strong>
+                            Dr. Keshya Valerie Sky
+                          </strong>
+                        </h4>
+                        <h4 class="category mt-4">UMUM</h4>
+                        <h4 class="mt-3" style="color: #9B9B9B">
+                          Senin - Sabtu
+                        </h4>
+                        <h4 class="mt-3" style="color: #C4C3C3">
+                          (021) - 123456789
+                        </h4>
                       </div>
                     </div>
+                      <div class="card-title">
+                        <a href="">Lihat Surat Izin</a>
+                      </div>
                   </div>
                 </div>
                 <div class="col-6">
-                  <form>
-                    <fieldset disabled>
-                      <div class="form-group">
-                        <label class="mt-3" for="disabledTextInput">Nama</label>
-                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Dr. Keshya Valerie Sky">
-                        <label class="mt-3" for="disabledTextInput">Nama</label>
-                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Dr. Keshya Valerie Sky">
-                        <label class="mt-3" for="disabledTextInput">Nama</label>
-                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Dr. Keshya Valerie Sky">
-                        <label class="mt-3" for="disabledTextInput">Nama</label>
-                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Dr. Keshya Valerie Sky">
-                        <label class="mt-3" for="disabledTextInput">Nama</label>
-                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Dr. Keshya Valerie Sky">
-                      </div>
-                    </fieldset>
-                  </form>
+                  <div>
+                    <h4 class="mt-4">Nama</h4>
+                    <h5 class="label mt-4">Dr. Keshya Valerie Sky</h5>
+                  </div>
+                  <div>
+                    <h4 class="mt-4">No. Izin Praktik</h4>
+                    <h5 class="label mt-4">A.123456789</h5>
+                  </div>
+                  <div>
+                    <h4 class="mt-4">Alamat</h4>
+                    <h5 class="label mt-4">Jl. Soekarno Hatta, Kota Jambi</h5>
+                  </div>
+                  <div>
+                    <h4 class="mt-4">Tempat Tanggal Lahir</h4>
+                    <h5 class="label mt-4">Kota Jambi, 17 Maret 1989</h5>
+                  </div>
+                  <div>
+                    <h4 class="mt-4">Agama</h4>
+                    <h5 class="label mt-4">Islam</h5>
+                  </div>
+                  <button class="mt-5 btn btn-block">EDIT</button>
                 </div>
               </div>
             </div>
@@ -65,12 +84,31 @@
 h2{
   padding-left: 65px;
 }
+.category{
+  background-color: #09C2DE;
+  color: white;
+  width: 50%;
+  margin: auto;
+  border-radius: 20px 20px 20px 20px;
+  padding: 7px;
+}
+.card-title{
+  background-color: #09C2DE;
+  margin-bottom: 0px;
+  border-radius: 0 0 15px 15px;
+  padding: 10px;
+}
+.card-title a{
+  text-decoration: none;
+  color: white;
+}
 .card-img-top{
   width: 70%;
   margin: auto;
 }
-.text{
-  color: #0957DE;
+.label{
+  background-color: rgba(213, 224, 254, 0.3);
+  padding: 10px;
 }
 .container a {
   text-decoration: none;
@@ -89,7 +127,8 @@ h2{
 .content{
   margin-left: 50px;
   margin-top: 50px;
-  width: 400px;
+  width: auto;
+  max-width: 400px;
   border: none;
   border-radius: 15px;
   box-shadow: 1px 3px 3px 3px rgba(124, 124, 124, 0.3);
@@ -102,14 +141,14 @@ h2{
   font-weight: bold;
 }
 .btn{
-  width: 90%;
+  width: 100%;
   background-color: #0957DE;
   border-radius: 7px;
   margin: auto;
   color: white;
-  font-size: 1em;
+  font-size: 1.7em;
   font-weight: bold;
-  padding: 10px;
+  padding: 20px;
   margin-bottom: 10px;
 }
 .btn:hover {
