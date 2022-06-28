@@ -1,5 +1,6 @@
 <template>
   <div class="page">
+    <Bootstrapjs />
     <Header />
     <div class="container mb-4">
       <div class="row">
@@ -45,6 +46,61 @@
                   </div>
                 </div>
                 <div class="col-6">
+                  <a href="#carouselExampleFade" role="button" data-slide="next">Next</a>
+                  <a href="#carouselExampleFade" role="button" data-slide="prev">Prev</a>
+                  <div id="carouselExampleFade" class="carousel slide" data-interval="false">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div>
+                          <h4 class="mt-4">Nama</h4>
+                          <h5 class="label mt-4">Dr. Keshya Valerie Sky</h5>
+                        </div>
+                        <div>
+                          <h4 class="mt-4">No. Izin Praktik</h4>
+                          <h5 class="label mt-4">A.123456789</h5>
+                        </div>
+                        <div>
+                          <h4 class="mt-4">Alamat</h4>
+                          <h5 class="label mt-4">Jl. Soekarno Hatta, Kota Jambi</h5>
+                        </div>
+                        <div>
+                          <h4 class="mt-4">Tempat Tanggal Lahir</h4>
+                          <h5 class="label mt-4">Kota Jambi, 17 Maret 1989</h5>
+                        </div>
+                        <div>
+                          <h4 class="mt-4">Agama</h4>
+                          <h5 class="label mt-4">Islam</h5>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <div>
+                          <h4 class="mt-4">Senin</h4>
+                          <h5 class="label mt-4">08:00 - 11:00</h5>
+                        </div>
+                        <div>
+                          <h4 class="mt-4">Selasa</h4>
+                          <h5 class="label mt-4">08:00 - 11:00</h5>
+                        </div>
+                        <div>
+                          <h4 class="mt-4">Rabu</h4>
+                          <h5 class="label mt-4">08:00 - 11:00</h5>
+                        </div>
+                        <div>
+                          <h4 class="mt-4">Kamis</h4>
+                          <h5 class="label mt-4">08:00 - 11:00</h5>
+                        </div>
+                        <div>
+                          <h4 class="mt-4">Jumat</h4>
+                          <h5 class="label mt-4">08:00 - 11:00</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="mt-5 btn btn-block">EDIT</button>
+                </div>
+
+                <!-- <div class="col-6">
                   <div>
                     <h4 class="mt-4">Nama</h4>
                     <h5 class="label mt-4">Dr. Keshya Valerie Sky</h5>
@@ -66,7 +122,8 @@
                     <h5 class="label mt-4">Islam</h5>
                   </div>
                   <button class="mt-5 btn btn-block">EDIT</button>
-                </div>
+                </div> -->
+
               </div>
             </div>
           </div>
