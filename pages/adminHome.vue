@@ -1,7 +1,16 @@
 <template>
   <div class="page">
     <Header />
-    <h1 class="title text-center">Selamat Datang Admin</h1>
+    <div class="container head">
+      <div class="row">
+        <div class="col-6">
+          <h1 class="title">Selamat Pagi Tiara!</h1>
+        </div>
+        <div class="col-6">
+          <h1 class="date text-right">Rabu, 27 Mei 2022</h1>
+        </div>
+      </div>
+    </div>
     <div class="container-fluid">
       <div class="row">
 
@@ -67,10 +76,20 @@
 
 <style>
 .title{
-  font-size: 2.5vw;
-  font-weight: bold;
+  font-size: 2.3vw;
+  font-weight: 500;
   color: #0957DE;
-  text-shadow: 1px 3px 3px rgba(124, 124, 124, 0.7);
+  text-shadow: 1px 3px 3px rgba(124, 124, 124, 0.5);
+}
+.date{
+  font-size: 1.5vw;
+  color: black;
+  margin-top: 15px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+.head{
+  max-width: 1800px;
 }
 .page{
     background-color: whitesmoke;

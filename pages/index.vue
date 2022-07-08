@@ -18,11 +18,11 @@
         <label for="" style="font-weight: bold">ID</label>
         <input type="text" class="form-control" id="id" placeholder="Masukkan ID Kamu">
       </div>
-      <div class="form-group">
+      <div class="form-group mt-5">
         <label for="" style="font-weight: bold">Password</label>
         <input type="password" class="form-control" id="password" placeholder="Masukkan Password">
       </div>
-      <button type="submit" class="btn btn-primary btn-block mt-4"><strong>Masuk</strong></button>
+      <button type="submit" class="btn btn-primary btn-block mt-4 mb-2"><strong>Masuk</strong></button>
     </form>
       </div>
     </div>
@@ -41,14 +41,14 @@ export default {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: url("~/assets/img/bg.png");
+    background-image: url("~/assets/img/bg2.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position:center;
-    background-color: #0957DE;
+    background-color: white;
 }
 .title{
-  color: white;
+  color: #0957DE;
   font-weight: bold;
   font-size: 5vw;
 }
@@ -58,13 +58,19 @@ export default {
   border-radius: 10px;
   padding: 20px;
   margin-top: 100px;
+  background-color: whitesmoke;
+  border: none;
+  box-shadow: 1px 3px 3px rgba(124, 124, 124, 0.5);
 }
 .form-title{
   color: #0957DE;
+  font-size: 3vw;
 }
 .btn{
   background-color: #0957DE;
   color: white;
+  height: 70px;
+  font-size: 1.5em;
 }
 .btn:hover {
   background-color: white;
