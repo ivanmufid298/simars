@@ -21,7 +21,7 @@
 
 </template>
 
-<script src="@/assets/js/app.js"></script>
+
 
 <style>
 * {

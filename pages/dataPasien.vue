@@ -14,39 +14,89 @@
         <div class="card">
           <div class="card-body">
             <div class="card-title mb-5">Data Poli Umum</div>
-            <div class="row">
-              <table class="table text-center">
-                <thead>
-                  <tr>
-                    <th scope="col">Status</th>
-                    <th scope="col">Antrian</th>
-                    <th scope="col">Nama Lengkap</th>
-                    <th scope="col">Jadwal</th>
-                    <th scope="col">Aksi</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row"><h4 class="btn btn-primary">Sedang diproses</h4></th>
-                    <td>UM01</td>
-                    <td>Tenku Mahmudi</td>
-                    <td>27/05/2022</td>
-                    <td>
-                      <div class="row">
-                        <div class="col-6"><a href="" class="btn btn-primary">Lihat</a></div>
-                        <div class="col-6"><a href="" class="btn btn-danger">Hapus</a></div>
+              <div class="table-responsive-sm">
+                <vue-good-table
+                  :columns="columns"
+                  :rows="rows" >
+
+                  <template slot="table-row" slot-scope="props">
+                    <span v-if="props.column.field == 'action'">
+                      <div class="text-center">
+                        <button class="btn btn-primary" @click="editRow(props.row.id)">Edit</button>
+                        <button class="btn btn-danger" @click="deleteRow(props.row.id)">Delete</button>
                       </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+                    </span>
+                    <span v-else>
+                      {{props.formattedRow[props.column.field]}}
+                    </span>
+                  </template>
+
+                </vue-good-table>
+
+                <span>{{ nama }}</span>
+              </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'my-component',
+data() {
+  	return {
+      columns: [
+        {
+          label: "Status",
+          field: "status",
+        },
+        {
+          label: 'Antrian',
+          field: 'id',
+          sortable: true,
+        },
+        {
+          label: 'Nama Lengkap',
+          field: 'nama',
+          type: 'number',
+          sortable: true,
+        },
+        {
+          label: "Jadwal",
+          field: "jadwal",
+          type: "date",
+          dateInputFormat: 'dd-MM-yyyy',
+          dateOutputFormat: 'MMM do yy',
+        },
+        {
+          label: 'Action',
+          field: 'action'
+        },
+      ],
+      rows: [
+        { status: "", id: 1, nama: "A", jadwal: '19-07-2022' },
+        { status: "", id: 2, nama: "A", jadwal: '19-07-2022' },
+        { status: "", id: 3, nama: "A", jadwal: '19-07-2022' },
+        { status: "", id: 5, nama: "A", jadwal: '19-07-2022' },
+      ],
+      nama: ''
+    };
+  },
+  methods: {
+  	editRow(id) {
+    	this.showAlert(id, 'EDIT')
+    },
+    deleteRow(id) {
+    	this.showAlert(id, 'DELETE')
+    },
+    showAlert(id, type) {
+    	this.nama = `You clicked ${type} on row ID ${id}`
+    }
+  }
+};
+</script>
 
 <style>
 .page{
@@ -75,12 +125,11 @@
   font-weight: bold;
 }
 .btn{
-  width: 50%;
+  width: 30%;
   border-radius: 7px;
   margin: auto;
   color: white;
   font-size: 1em;
-  font-weight: bold;
   padding: 10px;
   margin-bottom: 10px;
 }

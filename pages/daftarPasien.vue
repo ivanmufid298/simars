@@ -11,7 +11,7 @@
     </div>
     <div class="container-fluid page">
       <div class="row">
-        <div class="card">
+        <div class="card mb-5">
           <div class="card-body">
             <h5 class="card-title">PENDAFTARAN</h5>
              <div class="card-text">
@@ -95,7 +95,7 @@
 <style>
 .page{
     background-color: whitesmoke;
-    height: 100vh;
+    height: auto;
 }
 .container a {
   text-decoration: none;
