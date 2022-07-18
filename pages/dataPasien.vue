@@ -17,7 +17,16 @@
               <div class="table-responsive-sm">
                 <vue-good-table
                   :columns="columns"
-                  :rows="rows" >
+                  :rows="rows"
+                  :pagination-options="{
+                  enabled: true,
+                  mode: 'pages'
+                  }"
+                  :search-options="{
+                    enabled: true,
+                    placeholder: 'Search Name'
+                  }"
+                  >
 
                   <template slot="table-row" slot-scope="props">
                     <span v-if="props.column.field == 'action'">
@@ -76,7 +85,7 @@ data() {
         },
       ],
       rows: [
-        { status: "", id: 1, nama: "A", jadwal: '19-07-2022' },
+        { status: "", id: 1, nama: "B", jadwal: '19-07-2022' },
         { status: "", id: 2, nama: "A", jadwal: '19-07-2022' },
         { status: "", id: 3, nama: "A", jadwal: '19-07-2022' },
         { status: "", id: 5, nama: "A", jadwal: '19-07-2022' },
