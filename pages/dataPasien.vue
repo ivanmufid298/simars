@@ -29,6 +29,11 @@
                   >
 
                   <template slot="table-row" slot-scope="props">
+                    <span v-if="props.column.field == 'status'">
+                      <div class="text-center">
+                        <h5 class="status">selesai</h5>
+                      </div>
+                    </span>
                     <span v-if="props.column.field == 'action'">
                       <div class="text-center">
                         <button class="btn btn-primary" @click="editRow(props.row.id)">Edit</button>
@@ -60,6 +65,7 @@ data() {
         {
           label: "Status",
           field: "status",
+          type: "text",
         },
         {
           label: 'Antrian',
@@ -140,6 +146,12 @@ data() {
   color: white;
   font-size: 1em;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+}
+.status{
+  background-color: rgb(0, 202, 202);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
 }
 </style>
